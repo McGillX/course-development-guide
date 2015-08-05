@@ -19,7 +19,7 @@ This documentation is meant as a reference for McGillX staff and other members o
    rstfiles/problem-templates
 
 
-Adding to the How To Guide
+Contributing
 -------------------------------------------
 
 Much of this documentation is written in ReStructured Text (rst). Refer to this 'cheat sheet'_ on rst or 'this documentation'_
