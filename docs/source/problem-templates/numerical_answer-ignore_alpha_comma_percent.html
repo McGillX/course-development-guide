@@ -1,0 +1,48 @@
+<problem>
+<script type="loncapa/python">
+import re
+import string
+
+def answerConverter(answer):
+        try:
+            answer = str(answer)
+            #Removes alpha numerical characters and % sign from the answer
+            answer= re.sub("[A-Za-z]|%","", answer)
+            #Converts commas to decimal points
+            answer = re.sub(',',".",answer)
+            answer = float(answer)
+            return answer
+        except ValueError:
+            return False
+        
+def checkAnswer(expect, ans):
+	try: 
+        #Replace 10 with the correct numerical answer
+  		correctAnswer = float(10)
+        #Replace 1 with the desired numerical tolerance
+  		tolerance = 1
+		submittedAnswer = answerConverter(ans)
+  		toleratedAnswer = abs(correctAnswer-submittedAnswer)
+		if tolerance>=toleratedAnswer:
+			return True
+		else:
+			return False
+	except ValueError:
+		return False
+    
+</script>
+
+<p>Question Text</p>
+<customresponse cfn="checkAnswer">
+        <textline size="40" correct_answer="Correct Answer Displayed to Students" label="Question Text"/><br/>
+</customresponse>
+
+
+    <solution>
+        <div class="detailed-solution">
+            <p>Explanation</p>
+<p> Solution </p>
+        </div>
+    </solution>
+</problem>
+
