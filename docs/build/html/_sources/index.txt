@@ -6,20 +6,16 @@
 Welcome to McGillX Course Developement Guide
 =============================================================
 
-Contents:
-
-.. toctree::
-   :maxdepth: 2
-
 This documentation is meant as a reference for McGillX staff and other members of the edX community.
 
 .. toctree::
    :maxdepth: 2
    
-   rstfiles/problem-templates
+   problem-templates
+   notes
 
 
-Adding to the How To Guide
+Contributing
 -------------------------------------------
 
 Much of this documentation is written in ReStructured Text (rst). Refer to this 'cheat sheet'_ on rst or 'this documentation'_

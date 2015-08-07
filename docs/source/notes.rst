@@ -12,7 +12,9 @@ Styling
 ========
 
 - Use style="color:#808080" for text that might distract the user
-<p style="color:#808080">Reference: "Intense Sweetener Market Worldwide, 2005 and 2009." Market Share Reporter. Ed. Robert S. Lazich and Virgil L. Burton, III. 2011 ed. Detroit: Gale Group, 2011. 828 pp. 2 vols.</p>
+.. code-block:: html 
+
+    <p style="color:#808080">Reference: "Intense Sweetener Market Worldwide, 2005 and 2009." Market Share Reporter. Ed. Robert S. Lazich and Virgil L. Burton, III. 2011 ed. Detroit: Gale Group, 2011. 828 pp. 2 vols.</p>
 
 Debugging
 ============================
