@@ -1,5 +1,5 @@
 <problem>
-  <script type="text/javascript"> 
+<script type="text/javascript"> 
    
 // get the JSinput element // 
 // its ID is stored as the attribute "inputid" in a div with name "JSinput" // 
@@ -8,6 +8,15 @@ jsi_id = jsi_div.getAttribute('inputid');
 jsi = parent.document.getElementById(jsi_id);
 jsi.value = "yes" 
 
+</script>
+  <script type="text/javascript"> 
+   (function() { 
+    $( ".check-label" ).text("I contributed to the 'Show us your Market' Map");
+   })(); 
+    (function() { 
+    $( ".check.Check" ).css({"text-transform": "none", "margin-left":"auto"});
+   })(); 
+    
 </script>
   <script type="text/python"> 
 import re
@@ -22,10 +31,10 @@ def checkAnswer(expect, ans):
     except ValueError:
         return True
     </script>
-  <p style="display:inline">I contributed to the Assignment 5: 'Show us your Market' Map
-   <customresponse cfn="checkAnswer">
-   <textline inline="1" hidden="JSinput"/> 
-  </customresponse>
+  <p style="display:inline">
+    <customresponse cfn="checkAnswer">
+      <textline inline="1" hidden="JSinput"/>
+    </customresponse>
   </p>
   
 </problem>
