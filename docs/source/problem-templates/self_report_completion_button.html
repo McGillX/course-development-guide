@@ -11,10 +11,13 @@ jsi.value = "yes"
 </script>
   <script type="text/javascript"> 
    (function() { 
-    $( ".check-label" ).text("I contributed to the 'Show us your Market' Map");
+    $( ".check-label" ).text("Text displayed on self report button");
+    $( ".check.Check" ).css({"text-transform": "none"});
+       // To center all submit buttons on page uncomment the line below
+       // $( "div.problem div.action").css({"text-align":"center"});
+       //Replace the Title of Problem
+    $("input[value='Title of Problem']").parent("div.action").css({"text-align":"center"});
    })(); 
-    (function() { 
-    $( ".check.Check" ).css({"text-transform": "none", "margin-left":"auto"});
    })(); 
     
 </script>
@@ -31,10 +34,9 @@ def checkAnswer(expect, ans):
     except ValueError:
         return True
     </script>
-  <p style="display:inline">
     <customresponse cfn="checkAnswer">
-      <textline inline="1" hidden="JSinput"/>
+      <textline hidden="JSinput"/>
     </customresponse>
-  </p>
+
   
 </problem>
