@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to McGillX Course Developement Guide
+Welcome to McGillX Course Development Guide
 =============================================================
 
 This documentation is meant as a reference for McGillX staff and other members of the edX community.
