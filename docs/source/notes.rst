@@ -4,7 +4,7 @@ Check List
 - Setup grade book
 - Set component release dates
 
-General Guide Lines
+General Guidelines
 ============================
 
 - Use the minimum number of modules per page 
