@@ -7,6 +7,7 @@ Check List
 General Guidelines
 ============================
 
+- Be sure to use permalinks when linking to external content
 - Use the minimum number of modules per page 
 
 :Example: Do not put an image related to a problem in a separate html module if you might just as easily include it in the problem module
