@@ -11,18 +11,16 @@ This documentation is meant as a reference for McGillX staff and other members o
 .. toctree::
    :maxdepth: 2
    
-   problem-templates
    notes
+   problem-templates
+   problem-grading
 
 
 Contributing
 -------------------------------------------
 
-Much of this documentation is written in ReStructured Text (rst). Refer to this 'cheat sheet'_ on rst or 'this documentation'_
+Much of this documentation is written in ReStructured Text (rst). Refer to this 'cheat sheet <https://github.com/ralsina/rst-cheatsheet/blob/master/rst-cheatsheet.rst>'_ on rst or 'this documentation <http://rest-sphinx-memo.readthedocs.org/en/latest/ReST.html#structural-elements>'_ .
 
-.. _cheat sheet: https://github.com/ralsina/rst-cheatsheet/blob/master/rst-cheatsheet.rst
-
-.. _this documentation: http://rest-sphinx-memo.readthedocs.org/en/latest/ReST.html#structural-elements
 
 The guide is hosted on github. To edit files click the "Edit on Github" in the top right hand corner. Note you need to create a github account and without permissions you will need to create a "pull request" after completing your edits. Your edits will then be pending approval.
 
