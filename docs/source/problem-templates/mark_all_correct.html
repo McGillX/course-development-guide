@@ -1,0 +1,28 @@
+<problem>
+
+    
+<script type="loncapa/python">
+import re
+
+def checkAnswer(expect, ans):
+    response = re.search('', ans) 
+    if response: 
+        return 1 
+    else: 
+        return 0
+</script>
+
+ 
+<p>Question Text</p>
+  <customresponse cfn="checkAnswer"> 
+    <textline inline="1" size="20" correct_answer="Answer Displayed to Students" label="Question text"/>
+  </customresponse>
+
+    
+  <solution>
+    <div class="detailed-solution">
+      <p>Explanation</p>
+      <p></p>
+    </div>
+  </solution>
+</problem>

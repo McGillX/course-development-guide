@@ -1,4 +1,4 @@
-Check List
+Course Creation Check List
 ============================
 
 - Setup grade book
