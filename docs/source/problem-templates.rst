@@ -1,6 +1,8 @@
 Problem Templates
 =============================
 
+.. note:: If you copy the templates below be sure to paste them in the advanced (xml) editor in edX
+
 Dropdown - Inline Display
 ----------------------------------------------
 
