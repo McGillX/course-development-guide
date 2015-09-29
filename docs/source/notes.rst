@@ -29,6 +29,21 @@ Debugging
 
 - You can not put ampersands (&) in the label field of 
 
+Course Closing
+========================
+
+1. Set the discussion black out dates (discussion closing dates)
+
+Under the advanced settings tab set the discussion blackout dates with the end date being 2099.
+
+.. code-block:: xml
+[
+    [
+        "2015-12-18T00:00",
+        "2099-12-31T11:59"
+    ]
+]
+
 Resources
 ==============
 
