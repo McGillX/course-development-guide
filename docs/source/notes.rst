@@ -29,7 +29,7 @@ Styling
  
 .. code-block:: xml
 
-    <p style="color:#808080"> Reference: "McGillX How To"</p>
+    <p style="color:#808080"> Reference: "McGillX How To" </p>
 
 Debugging
 ============================
