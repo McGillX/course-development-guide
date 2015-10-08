@@ -7,16 +7,23 @@ Course Creation Check List
 General Guidelines
 ============================
 
-- Be sure to use permalinks when linking to external content
-- Use the minimum number of modules per page 
+- Whenever possible keep images small (less than 500kb)
 
 :Example: Do not put an image related to a problem in a separate html module if you might just as easily include it in the problem module
 
-- Use a horizontal line <hr> if you want to visually separate components
+
+Future Proofing Course Content
+===================================
+
+- Use permalinks when linking to external content
+- Avoid time sensitive references
 
 
 Styling
 ========
+
+- Use the minimum number of modules per page 
+- Use a horizontal line <hr> if you want to visually separate components
 
 - Use ``style="color:#808080"`` for text that might distract the user
  
@@ -27,7 +34,7 @@ Styling
 Debugging
 ============================
 
-- You can not put ampersands (&) in the label field of 
+- You can not put ampersands (&) in the label field of problem
 
 Course Closing
 ========================
@@ -37,12 +44,12 @@ Course Closing
 Under the advanced settings tab set the discussion blackout dates with the end date being 2099.
 
 .. code-block:: xml
-[
-    [
-        "2015-12-18T00:00",
-        "2099-12-31T11:59"
-    ]
-]
+ [
+     [
+         "2015-12-18T00:00",
+         "2099-12-31T11:59"
+     ]
+ ]
 
 Resources
 ==============
