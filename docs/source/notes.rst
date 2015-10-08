@@ -29,7 +29,7 @@ Styling
  
 .. code-block:: xml
 
-    <p style="color:#808080">Reference: "McGillX How To</p>
+    <p style="color:#808080"> Reference: "McGillX How To"</p>
 
 Debugging
 ============================
@@ -44,12 +44,12 @@ Course Closing
 Under the advanced settings tab set the discussion blackout dates with the end date being 2099.
 
 .. code-block:: xml
- [
-     [
-         "2015-12-18T00:00",
-         "2099-12-31T11:59"
-     ]
- ]
+    [
+        [
+            "2015-12-18T00:00",
+            "2099-12-31T11:59"
+        ]
+    ]
 
 Resources
 ==============
