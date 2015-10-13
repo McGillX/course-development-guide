@@ -35,6 +35,7 @@ Debugging
 ============================
 
 - You can not put ampersands (&) in the label field of problem
+- When editing/changing an image reupload, it with the same name that way it just overwrites the earlier version (note that until you clear your browser's cache the image will remain unchanged from your point of view)
 
 Course Closing
 ========================
