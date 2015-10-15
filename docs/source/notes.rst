@@ -19,6 +19,7 @@ Future Proofing Course Content
 
 - Use permalinks when linking to external content
 - Avoid time sensitive references
+- Use /jump_to_id when creating internal links within the courseware
 
 
 Styling
