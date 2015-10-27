@@ -58,4 +58,11 @@ Under the advanced settings tab set the discussion blackout dates with the end d
 Resources
 ==============
 
+edX
+-----
+
+Reports downtimes for edX: http://status.edx.org/
+
+Integration Tools
+------------------
 Tool for writing regular expressions: https://regex101.com/#python
