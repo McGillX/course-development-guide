@@ -13,6 +13,7 @@ General Guidelines
 
 :Example: Do not put an image related to a problem in a separate html module if you might just as easily include it in the problem module
 
+- Since pages can't be scheduled for release, either save the html prepared for release or enclose content in comment tags and remove them when the content is ready for students :code: <!-- --> 
 
 Future Proofing Course Content
 ===================================
