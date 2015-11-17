@@ -46,18 +46,10 @@ Provides a text box for student answers. Correct answers are determined using re
    :language: xml
 
 
-Short Answer - Fill In the Blank Display
+Short Answer - Fill In the Blank Display/Inline Display
 -----------------------------------------------
 
 Displays question text in line with the space for students to fill in.
-
-.. literalinclude:: /problem-templates/short_answer-inline_display.html
-   :language: xml
-
-Short Answer - Inline Display
------------------------------------------------
-
-Displays question text in line with textbox.
 
 .. literalinclude:: /problem-templates/short_answer-inline_display.html
    :language: xml
