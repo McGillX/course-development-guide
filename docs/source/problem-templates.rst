@@ -49,7 +49,7 @@ Provides a text box for student answers. Correct answers are determined using re
 Short Answer - Fill In the Blank Display/Inline Display
 -----------------------------------------------
 
-Displays question text in line with the space for students to fill in.
+Displays question text inline with the textbox for students to fill in.
 
 .. literalinclude:: /problem-templates/short_answer-inline_display.html
    :language: xml
