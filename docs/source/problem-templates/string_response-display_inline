@@ -1,0 +1,7 @@
+<problem>
+<p style="display:inline;">Please fill in the box to the right
+  <stringresponse answer="ANSWER" type="ci regexp">
+    <textline inline="1" size="50" label="Please fill in the box to the right"/>
+  </stringresponse>
+  </p>
+  </problem>
