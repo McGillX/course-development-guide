@@ -19,7 +19,7 @@ Creates multiline textboxes for questions that require larger amounts of text.
 .. literalinclude:: /problem-templates/long_answer.html
    :language: xml
    
-Numerical Response
+Custom Numerical Response
 ----------------------------------
 
 The template below removes alphabetical characters, percent signs and converts commas to decimal places. This avoids the error message resulting from standard edX numerical problems.
