@@ -1,0 +1,44 @@
+  <style>
+  #resizable { 
+    width: 150px; 
+    height: 150px; 
+    padding: 0.5em; 
+    border: 3px solid red;
+    background-color: transparent;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    border-radius: 500px;
+  }
+    #draggable{
+      background-color: transparent;
+      border-color: transparent;
+    }
+    .ui-widget-content {
+    border: 1px solid transparent;
+      background:transparent;
+    }
+  </style>
+  <script>
+  $(function() {
+    $( "#resizable" ).resizable({
+      aspectRatio: 9 / 9,
+      maxHeight: 500,
+      maxWidth: 500,
+      minHeight: 50,
+      minWidth: 50,
+                                });
+  });
+  </script>
+<script>
+  $(function() {
+    $( "#draggable" ).draggable();
+  });
+  </script>
+
+<div id="draggable" class="ui-widget-content">
+<div id="resizable" class="ui-widget-content">
+</div>
+
+</div>
+ 
+ 
