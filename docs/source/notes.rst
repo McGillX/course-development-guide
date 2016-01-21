@@ -67,3 +67,4 @@ Reports downtimes for edX: http://status.edx.org/
 Integration Tools
 ------------------
 Tool for writing regular expressions: https://regex101.com/#python
+Page Ruler for draggables https://chrome.google.com/webstore/detail/page-ruler/jlpkojjdgbllmedoapgfodplfhcbnbpn
