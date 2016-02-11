@@ -1,36 +1,36 @@
-Problem Templates
+Interactions and Custom Styles
 =============================
 
 .. note:: If you copy the templates below be sure to paste them in the advanced (xml) editor in edX Studio (Do NOT use the visual editor)
 
-Dropdown - Inline Display
+Collapsible Field
 ----------------------------------------------
 
-Displays the question text inline with the dropdown menu for selecting answer options.
+Collapsible field expands when clicked.
 
-.. literalinclude:: /problem-templates/dropdown-inline_display.html
+.. literalinclude:: /interactions-and-styles/collapsible.html
    :language: xml
    
-Long Answer
+Collapsible McGillX Styled 
 ----------------------------------
 
-Creates multiline textboxes for questions that require larger amounts of text.
+Collapsible field expands when clicked. Custom CSS adding down arrow and titles.
 
-.. literalinclude:: /problem-templates/long_answer.html
+.. literalinclude:: /interactions-and-styles/collapsible_styled.html
    :language: xml
    
-Custom Numerical Response
+Collapsible McGillX Styled for Transcripts
 ----------------------------------
 
-The template below removes alphabetical characters, percent signs and converts commas to decimal places. This avoids the error message resulting from standard edX numerical problems.
+Collapsible field expands when clicked. Custom CSS adding down arrow and titles.
 
-.. literalinclude:: /problem-templates/numerical_response.html
+.. literalinclude:: /interactions-and-styles/collapsible_styled_transcript.html
    :language: xml   
    
-Self Report Completion Button
+McGillX FAQ & Help
 -----------------------------------------------
 
-A button that when clicked awards points
+McGillX FAQ & Help from course page intended to assist students with troubleshooting. Note the content is dated and does not reflect new updates to edX.
 
 .. literalinclude:: /problem-templates/self_report_completion_button.html
    :language: xml
