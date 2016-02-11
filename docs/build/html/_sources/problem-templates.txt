@@ -1,6 +1,8 @@
 Problem Templates
 =============================
 
+.. note:: If you copy the templates below be sure to paste them in the advanced (xml) editor in edX Studio (Do NOT use the visual editor)
+
 Dropdown - Inline Display
 ----------------------------------------------
 
@@ -17,7 +19,7 @@ Creates multiline textboxes for questions that require larger amounts of text.
 .. literalinclude:: /problem-templates/long_answer.html
    :language: xml
    
-Numerical Response
+Custom Numerical Response
 ----------------------------------
 
 The template below removes alphabetical characters, percent signs and converts commas to decimal places. This avoids the error message resulting from standard edX numerical problems.
@@ -44,10 +46,10 @@ Provides a text box for student answers. Correct answers are determined using re
    :language: xml
 
 
-Short Answer - Inline Display
------------------------------------------------
+Short Answer - Fill In the Blank Display/Inline Display
+-----------------------------------------------------------------------------------
 
-Displays question text in line with the space for students to fill in.
+Displays question text inline with the textbox for students to fill in.
 
 .. literalinclude:: /problem-templates/short_answer-inline_display.html
    :language: xml

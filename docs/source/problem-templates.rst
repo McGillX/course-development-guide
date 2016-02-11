@@ -47,7 +47,7 @@ Provides a text box for student answers. Correct answers are determined using re
 
 
 Short Answer - Fill In the Blank Display/Inline Display
------------------------------------------------
+-----------------------------------------------------------------------------------
 
 Displays question text inline with the textbox for students to fill in.
 

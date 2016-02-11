@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Search &mdash; McGillX Course Developement Guide 0.0.1 documentation</title>
+  <title>Problem Grading &mdash; McGillX Course Developement Guide 0.0.1 documentation</title>
   
 
   
@@ -30,7 +30,9 @@
   
 
   
-    <link rel="top" title="McGillX Course Developement Guide 0.0.1 documentation" href="index.html"/> 
+    <link rel="top" title="McGillX Course Developement Guide 0.0.1 documentation" href="index.html"/>
+        <link rel="next" title="Interactions and Custom Styles Templates and Examples" href="interactions-and-styles.html"/>
+        <link rel="prev" title="Problem Templates" href="problem-templates.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -55,7 +57,7 @@
 
         
 <div role="search">
-  <form id="rtd-search-form" class="wy-form" action="#" method="get">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
@@ -69,7 +71,7 @@
         
           
           
-              <ul>
+              <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="notes.html">Course Creation Check List</a></li>
 <li class="toctree-l1"><a class="reference internal" href="notes.html#general-guidelines">General Guidelines</a></li>
 <li class="toctree-l1"><a class="reference internal" href="notes.html#future-proofing-course-content">Future Proofing Course Content</a></li>
@@ -90,8 +92,8 @@
 <li class="toctree-l2"><a class="reference internal" href="problem-templates.html#short-answer-fill-in-the-blank-display-inline-display">Short Answer - Fill In the Blank Display/Inline Display</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="problem-grading.html">Problem Grading</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="problem-grading.html#any-input-correct">Any Input Correct</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Problem Grading</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#any-input-correct">Any Input Correct</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="interactions-and-styles.html">Interactions and Custom Styles Templates and Examples</a><ul>
@@ -127,8 +129,12 @@
   <ul class="wy-breadcrumbs">
     <li><a href="index.html">Docs</a> &raquo;</li>
       
-    <li></li>
+    <li>Problem Grading</li>
       <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/problem-grading.txt" rel="nofollow"> View page source</a>
+          
         
       </li>
   </ul>
@@ -136,22 +142,56 @@
 </div>
           <div role="main" class="document">
             
-  <noscript>
-  <div id="fallback" class="admonition warning">
-    <p class="last">
-      Please activate JavaScript to enable the search
-      functionality.
-    </p>
-  </div>
-  </noscript>
+  <div class="section" id="problem-grading">
+<h1>Problem Grading<a class="headerlink" href="#problem-grading" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="any-input-correct">
+<h2>Any Input Correct<a class="headerlink" href="#any-input-correct" title="Permalink to this headline">¶</a></h2>
+<p>The template below will mark any response entered in the textbox correct.</p>
+<div class="highlight-xml"><div class="highlight"><pre><span class="nt">&lt;problem&gt;</span>
 
-  
-  <div id="search-results">
-  
-  </div>
+    
+<span class="nt">&lt;script</span> <span class="na">type=</span><span class="s">&quot;loncapa/python&quot;</span><span class="nt">&gt;</span>
+import re
+
+def checkAnswer(expect, ans):
+    response = re.search(&#39;&#39;, ans) 
+    if response: 
+        return 1 
+    else: 
+        return 0
+<span class="nt">&lt;/script&gt;</span>
+
+ 
+<span class="nt">&lt;p&gt;</span>Question Text<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;customresponse</span> <span class="na">cfn=</span><span class="s">&quot;checkAnswer&quot;</span><span class="nt">&gt;</span> 
+    <span class="nt">&lt;textline</span> <span class="na">inline=</span><span class="s">&quot;1&quot;</span> <span class="na">size=</span><span class="s">&quot;20&quot;</span> <span class="na">correct_answer=</span><span class="s">&quot;Answer Displayed to Students&quot;</span> <span class="na">label=</span><span class="s">&quot;Question text&quot;</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;/customresponse&gt;</span>
+
+    
+  <span class="nt">&lt;solution&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;detailed-solution&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;p&gt;</span>Explanation<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;p&gt;&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/solution&gt;</span>
+<span class="nt">&lt;/problem&gt;</span>
+</pre></div>
+</div>
+</div>
+</div>
+
 
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="interactions-and-styles.html" class="btn btn-neutral float-right" title="Interactions and Custom Styles Templates and Examples" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="problem-templates.html" class="btn btn-neutral" title="Problem Templates" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>
@@ -188,7 +228,6 @@
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="_static/searchtools.js"></script>
 
   
 
@@ -204,14 +243,7 @@
           SphinxRtdTheme.StickyNav.enable();
       });
   </script>
-  
-  <script type="text/javascript">
-    jQuery(function() { Search.loadIndex("searchindex.js"); });
-  </script>
-  
-  <script type="text/javascript" id="searchindexloader"></script>
    
-
 
 </body>
 </html>

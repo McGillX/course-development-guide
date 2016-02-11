@@ -31,8 +31,8 @@
 
   
     <link rel="top" title="McGillX Course Developement Guide 0.0.1 documentation" href="index.html"/>
-        <link rel="next" title="General Guide Lines" href="notes.html"/>
-        <link rel="prev" title="Welcome to McGillX Course Developement Guide" href="index.html"/> 
+        <link rel="next" title="Problem Grading" href="problem-grading.html"/>
+        <link rel="prev" title="Course Creation Check List" href="notes.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -72,19 +72,39 @@
           
           
               <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="notes.html">Course Creation Check List</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notes.html#general-guidelines">General Guidelines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notes.html#future-proofing-course-content">Future Proofing Course Content</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notes.html#styling">Styling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notes.html#debugging">Debugging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notes.html#course-closing">Course Closing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notes.html#resources">Resources</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="notes.html#edx">edX</a></li>
+<li class="toctree-l2"><a class="reference internal" href="notes.html#integration-tools">Integration Tools</a></li>
+</ul>
+</li>
 <li class="toctree-l1 current"><a class="current reference internal" href="">Problem Templates</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#dropdown-inline-display">Dropdown - Inline Display</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#long-answer">Long Answer</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#numerical-response">Numerical Response</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#custom-numerical-response">Custom Numerical Response</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#self-report-completion-button">Self Report Completion Button</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#short-answer">Short Answer</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#short-answer-inline-display">Short Answer - Inline Display</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#short-answer-fill-in-the-blank-display-inline-display">Short Answer - Fill In the Blank Display/Inline Display</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="notes.html">General Guide Lines</a></li>
-<li class="toctree-l1"><a class="reference internal" href="notes.html#styling">Styling</a></li>
-<li class="toctree-l1"><a class="reference internal" href="notes.html#debugging">Debugging</a></li>
-<li class="toctree-l1"><a class="reference internal" href="notes.html#resources">Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="problem-grading.html">Problem Grading</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="problem-grading.html#any-input-correct">Any Input Correct</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="interactions-and-styles.html">Interactions and Custom Styles Templates and Examples</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="interactions-and-styles.html#collapsible-field">Collapsible Field</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interactions-and-styles.html#collapsible-mcgillx-styled">Collapsible McGillX Styled</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interactions-and-styles.html#collapsible-mcgillx-styled-for-transcripts">Collapsible McGillX Styled for Transcripts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interactions-and-styles.html#mcgillx-faq-help">McGillX FAQ &amp; Help</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interactions-and-styles.html#example-custom-home-page-sidebar">Example Custom Home Page Sidebar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interactions-and-styles.html#example-syllabus">Example Syllabus</a></li>
+</ul>
+</li>
 </ul>
 
           
@@ -124,6 +144,10 @@
             
   <div class="section" id="problem-templates">
 <h1>Problem Templates<a class="headerlink" href="#problem-templates" title="Permalink to this headline">¶</a></h1>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">If you copy the templates below be sure to paste them in the advanced (xml) editor in edX Studio (Do NOT use the visual editor)</p>
+</div>
 <div class="section" id="dropdown-inline-display">
 <h2>Dropdown - Inline Display<a class="headerlink" href="#dropdown-inline-display" title="Permalink to this headline">¶</a></h2>
 <p>Displays the question text inline with the dropdown menu for selecting answer options.</p>
@@ -235,8 +259,8 @@ def checkAnswer2(expect, ans):
 </pre></div>
 </div>
 </div>
-<div class="section" id="numerical-response">
-<h2>Numerical Response<a class="headerlink" href="#numerical-response" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="custom-numerical-response">
+<h2>Custom Numerical Response<a class="headerlink" href="#custom-numerical-response" title="Permalink to this headline">¶</a></h2>
 <p>The template below removes alphabetical characters, percent signs and converts commas to decimal places. This avoids the error message resulting from standard edX numerical problems.</p>
 <div class="highlight-xml"><div class="highlight"><pre><span class="nt">&lt;problem&gt;</span>
 <span class="nt">&lt;script</span> <span class="na">type=</span><span class="s">&quot;loncapa/python&quot;</span><span class="nt">&gt;</span>
@@ -316,7 +340,6 @@ jsi.value = &quot;yes&quot;
   <span class="nt">&lt;script</span> <span class="na">type=</span><span class="s">&quot;text/python&quot;</span><span class="nt">&gt;</span> 
 import re
 def checkAnswer(expect, ans):
-    return True
     try:
         a1=str(ans[0])
         if a1==&quot;yes&quot;:
@@ -338,82 +361,10 @@ def checkAnswer(expect, ans):
 <div class="section" id="short-answer">
 <h2>Short Answer<a class="headerlink" href="#short-answer" title="Permalink to this headline">¶</a></h2>
 <p>Provides a text box for student answers. Correct answers are determined using regular expressions. &#8216;regex101&#8217;_ provides a tool for writing regular expressions.</p>
-<div class="highlight-xml"><div class="highlight"><pre><span class="nt">&lt;problem&gt;</span>
-
-    
-<span class="nt">&lt;script</span> <span class="na">type=</span><span class="s">&quot;loncapa/python&quot;</span><span class="nt">&gt;</span>
-import re
-
-def checkAnswer(expect, ans):
-    re1 = &#39;(ANSWER)&#39;
-    try:
-        a1=str(ans)
-        if re.match(re1, a1, re.IGNORECASE) is not None:
-            return True
-        else:
-            return False
-    except ValueError:
-        return False
-<span class="nt">&lt;/script&gt;</span>
-
- 
-
-  <span class="nt">&lt;customresponse</span> <span class="na">cfn=</span><span class="s">&quot;checkAnswer&quot;</span><span class="nt">&gt;</span>
-     <span class="nt">&lt;p</span> <span class="na">style=</span><span class="s">&quot;display:inline&quot;</span><span class="nt">&gt;</span>Question Text<span class="nt">&lt;/p&gt;</span>
-    <span class="nt">&lt;textline</span> <span class="na">inline=</span><span class="s">&quot;1&quot;</span> <span class="na">size=</span><span class="s">&quot;20&quot;</span> <span class="na">correct_answer=</span><span class="s">&quot;Answer Displayed to Students&quot;</span> <span class="na">label=</span><span class="s">&quot;Question text&quot;</span><span class="nt">/&gt;</span>
-    <span class="nt">&lt;p</span> <span class="na">style=</span><span class="s">&quot;display:inline&quot;</span><span class="nt">&gt;</span>More Question Text<span class="nt">&lt;/p&gt;</span>
-  <span class="nt">&lt;/customresponse&gt;</span>
-
-    
-  <span class="nt">&lt;solution&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;detailed-solution&quot;</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;p&gt;</span>Explanation<span class="nt">&lt;/p&gt;</span>
-      <span class="nt">&lt;p&gt;&lt;/p&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/solution&gt;</span>
-<span class="nt">&lt;/problem&gt;</span>
-</pre></div>
 </div>
-</div>
-<div class="section" id="short-answer-inline-display">
-<h2>Short Answer - Inline Display<a class="headerlink" href="#short-answer-inline-display" title="Permalink to this headline">¶</a></h2>
-<p>Displays question text in line with the space for students to fill in.</p>
-<div class="highlight-xml"><div class="highlight"><pre><span class="nt">&lt;problem&gt;</span>
-
-    
-<span class="nt">&lt;script</span> <span class="na">type=</span><span class="s">&quot;loncapa/python&quot;</span><span class="nt">&gt;</span>
-import re
-
-def checkAnswer(expect, ans):
-    re1 = &#39;(ANSWER)&#39;
-    try:
-        a1=str(ans)
-        if re.match(re1, a1, re.IGNORECASE) is not None:
-            return True
-        else:
-            return False
-    except ValueError:
-        return False
-<span class="nt">&lt;/script&gt;</span>
-
- 
-
-  <span class="nt">&lt;customresponse</span> <span class="na">cfn=</span><span class="s">&quot;checkAnswer&quot;</span><span class="nt">&gt;</span>
-     <span class="nt">&lt;p</span> <span class="na">style=</span><span class="s">&quot;display:inline&quot;</span><span class="nt">&gt;</span>Question Text<span class="nt">&lt;/p&gt;</span>
-    <span class="nt">&lt;textline</span> <span class="na">inline=</span><span class="s">&quot;1&quot;</span> <span class="na">size=</span><span class="s">&quot;20&quot;</span> <span class="na">correct_answer=</span><span class="s">&quot;Answer Displayed to Students&quot;</span> <span class="na">label=</span><span class="s">&quot;Question text&quot;</span><span class="nt">/&gt;</span>
-    <span class="nt">&lt;p</span> <span class="na">style=</span><span class="s">&quot;display:inline&quot;</span><span class="nt">&gt;</span>More Question Text<span class="nt">&lt;/p&gt;</span>
-  <span class="nt">&lt;/customresponse&gt;</span>
-
-    
-  <span class="nt">&lt;solution&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;detailed-solution&quot;</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;p&gt;</span>Explanation<span class="nt">&lt;/p&gt;</span>
-      <span class="nt">&lt;p&gt;&lt;/p&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/solution&gt;</span>
-<span class="nt">&lt;/problem&gt;</span>
-</pre></div>
-</div>
+<div class="section" id="short-answer-fill-in-the-blank-display-inline-display">
+<h2>Short Answer - Fill In the Blank Display/Inline Display<a class="headerlink" href="#short-answer-fill-in-the-blank-display-inline-display" title="Permalink to this headline">¶</a></h2>
+<p>Displays question text inline with the textbox for students to fill in.</p>
 </div>
 </div>
 
@@ -423,10 +374,10 @@ def checkAnswer(expect, ans):
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="notes.html" class="btn btn-neutral float-right" title="General Guide Lines" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="problem-grading.html" class="btn btn-neutral float-right" title="Problem Grading" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="index.html" class="btn btn-neutral" title="Welcome to McGillX Course Developement Guide" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="notes.html" class="btn btn-neutral" title="Course Creation Check List" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
