@@ -14,6 +14,7 @@ This documentation is meant as a reference for McGillX staff and other members o
    notes
    problem-templates
    problem-grading
+   interactions-and-styles
 
 
 Contributing
