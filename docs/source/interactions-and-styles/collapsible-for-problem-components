@@ -1,0 +1,10 @@
+<section class="hints">
+    <div class="collapsible">
+      <header>
+        <a id="ht3" href="#">Title</a>
+      </header>
+      <section id="ht3" style="display: none;">
+       TEXT
+      </section>
+    </div>
+  </section>
