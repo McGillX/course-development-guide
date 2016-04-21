@@ -13,7 +13,7 @@ General Guidelines
 
 - Whenever possible keep images small (less than 500kb)
 
-:Example: Do not put an image related to a problem in a separate html module if you might just as easily include it in the problem module
+.. example::  Do not put an image related to a problem in a separate html module if you might just as easily include it in the problem module
 
 - Since pages can't be scheduled for release, either save the html prepared for release or enclose content in comment tags and remove them when the content is ready for students `` <!-- --> ``
 
@@ -69,4 +69,4 @@ Reports downtimes for edX: http://status.edx.org/
 Integration Tools
 ------------------
 Tool for writing regular expressions: https://regex101.com/#python
-Page Ruler for draggables https://chrome.google.com/webstore/detail/page-ruler/jlpkojjdgbllmedoapgfodplfhcbnbpn
+Page Ruler for draggable or click-on problem types (useful when drawing target areas) https://chrome.google.com/webstore/detail/page-ruler/jlpkojjdgbllmedoapgfodplfhcbnbpn
