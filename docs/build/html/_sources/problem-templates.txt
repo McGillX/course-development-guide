@@ -6,7 +6,7 @@ Problem Templates
 Dropdown - Inline Display
 ----------------------------------------------
 
-Displays the question text inline with the dropdown menu for selecting answer options.
+Displays the question text inline with the dropdown menu for selecting answer options. Dropdown problems can only be programmed with one correct answer (trying to add more than one correct answer will result in only the last programmed answer being scored as correct).
 
 .. literalinclude:: /problem-templates/dropdown-inline_display.html
    :language: xml
