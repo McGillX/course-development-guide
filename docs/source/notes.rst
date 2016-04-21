@@ -3,7 +3,7 @@ Course Creation Check List
 
 - Add team members as beta testers and discussion admins as appropriate
 
-.. note: in order to appear as staff on the discussion board, users need to be added as discussion admin or discussion moderators in addition to any other membership right they have.
+.. note:: in order to appear as staff on the discussion board, users need to be added as discussion admin or discussion moderators in addition to any other membership right they have.
 
 - Setup grade book
 - Set component release dates
