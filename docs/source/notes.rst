@@ -48,9 +48,9 @@ Course Closing
 
 1. Set the discussion black out dates (discussion closing dates)
 
-Under the advanced settings tab set the discussion blackout dates with the end date being 2099.
+Under the advanced settings tab set the discussion blackout dates with the end date being 2099. See http://edx.readthedocs.org/projects/edx-partner-course-staff/en/latest/manage_live_course/discussions.html#define-when-discussions-are-closed for further details.
+.. code-block:: html
 
-.. code-block:: xml
     [
         [
             "2015-12-18T00:00",
