@@ -17,6 +17,8 @@ General Guidelines
 
 - Since pages can't be scheduled for release, either save the html prepared for release or enclose content in comment tags and remove them when the content is ready for students `` <!-- --> ``
 
+- If you export/import and lose all of the html formatting, you can copy paste (ctrl-a, ctrl-c, ctrl-v) into visual studio code and then use (shift-alt-f) to automatically fix all of the formatting (indentation, newlines, etc). 
+
 Future Proofing Course Content
 ===================================
 
